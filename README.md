@@ -1,5 +1,6 @@
 SZ3: A Modular Error-bounded Lossy Compression Framework for Scientific Datasets
 =====
+
 (C) 2016 by Mathematics and Computer Science (MCS), Argonne National Laboratory. See COPYRIGHT in the top-level directory.
 
 * Major Authors: Sheng Di, Kai Zhao, Xin Liang, Jinyang Liu
@@ -30,6 +31,7 @@ given by the executable.
 
 
 ## Backward Compatibility with SZ2
+
 For backward compatibility, most of the SZ2 command line parameters are supported in SZ3. **Exceptions are listed below**.
 Scripts without the parameters below should work fine by replacing SZ2 with SZ3.
 
@@ -49,25 +51,30 @@ The branch **sz3.3_develop** (https://github.com/szcompressor/SZ3/tree/sz3.3_dev
 ## API
 
 #### SZ3 C++ API
+
 * Located in 'include/SZ3/api/sz.hpp'. 
 * Requiring a modern C++ compiler.  
 * Different with SZ2 API.
 
 #### SZ3 C API
+
 * Located in 'tools/sz3c/include/sz3c.h'
 * Compatible with SZ2 API
 
 #### Python API
+
 * Located in 'tools/pysz/pysz.py'
 * Test file provided ('tools/pysz/test.py')
 * Compatible with both SZ3 and SZ2
 * Requiring SZ2/3 dynamic library
 
 #### Fortran API
+
 * Special thanks to [Oscar Mojica](https://github.com/ofmla) for providing the Fortran API
 * Visit [this Github repository](https://github.com/ofmla/sz3_simple_example) for details
 
 #### H5Z-SZ3
+
 * Located in 'tools/H5Z-SZ3'
 * Please add "-DBUILD_H5Z_FILTER=ON" to enable this function for CMake.
 * sz3ToHDF5 and HDF5ToSz3 are provided for testing.
